@@ -1,0 +1,24 @@
+---
+title: "example_rmarkdown"
+author: "Igor S"
+date: "2023-11-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bluprint example
+
+This is how to load data 
+
+```{r}
+library(reticulate)
+use_python(here::here('.venv/bin/python'))
+bluprint_conf <- import('bluprint_conf')
+
+data <- bluprint_conf$load_data_yaml()
+
+data
+```

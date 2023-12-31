@@ -1,0 +1,21 @@
+```{r}
+library(reticulate)
+use_python(here::here('.venv/bin/python'))
+bluprint_conf <- import('bluprint_conf')
+pd <- import('pandas')
+```
+
+```{r}
+data <- bluprint_conf$load_data_yaml()
+data
+```
+
+```{r}
+data$emailed$messy
+```
+
+```{r}
+messy_df <- readxl::read_xlsx(data$emailed$messy)
+
+messy_df
+```
