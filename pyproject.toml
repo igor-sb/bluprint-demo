@@ -18,3 +18,9 @@ license = {text = "MIT"}
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.setuptools]
+packages = ["conf", "data", "bluprint-demo"]
+
+[tool.pdm]
+package-type = "library"
