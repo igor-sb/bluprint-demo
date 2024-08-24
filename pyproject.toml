@@ -16,11 +16,8 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.setuptools]
 packages = ["conf", "data", "bluprint-demo"]
-
-[tool.pdm]
-package-type = "library"
