@@ -33,24 +33,26 @@ wheels = [
 ]
 
 [[package]]
-name = "bluprint-conf"
-version = "0.1.0"
+name = "bluprint"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "fire" },
     { name = "importlib-resources" },
     { name = "omegaconf" },
+    { name = "packaging" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c7/8e/85bfc5414216a9dfea9c003811339e6341482f006108c7dd6c91aaf1a424/bluprint_conf-0.1.0.tar.gz", hash = "sha256:55ae998462f7689ce35cb296f1fd44833564d143981f5ff2fe6b72102ffba709", size = 3841 }
+sdist = { url = "https://files.pythonhosted.org/packages/36/3b/a5cc0f6c86a3f380fb7f68be6fe2945afcb00ec7ef1cbdaa5b0745809b2a/bluprint-0.4.0.tar.gz", hash = "sha256:09148248371a3321da524bc0da4dda7677c8cb3a328460bb52755160c73cf074", size = 416837 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ef/2d/77c74f8a59b461e1a29612d24ddee5b84a4b664f6cc08e07f8b7fb648d6b/bluprint_conf-0.1.0-py3-none-any.whl", hash = "sha256:e0d44032fe44d3c400f521c76229c92d3524315b77fe5f50ead62b8def185c39", size = 2689 },
+    { url = "https://files.pythonhosted.org/packages/a5/1c/1dab05fbd9ba0f5920ff23b748c6a62455f141259363425b32e8d47ab938/bluprint-0.4.0-py3-none-any.whl", hash = "sha256:0917deb6d7394df24e5675ad9b28499f64da47662fe882f03c98408d3ccf41b9", size = 20730 },
 ]
 
 [[package]]
 name = "bluprint-demo"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
-    { name = "bluprint-conf" },
+    { name = "bluprint" },
     { name = "ipykernel" },
     { name = "openpyxl" },
     { name = "pandas" },
@@ -58,7 +60,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bluprint-conf", specifier = ">=0.1.0" },
+    { name = "bluprint", specifier = ">=0.4.0" },
     { name = "ipykernel", specifier = ">=6.27.1" },
     { name = "openpyxl", specifier = ">=3.1.2" },
     { name = "pandas", specifier = ">=2.1.4" },
@@ -173,6 +175,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/08/41/85d2d28466fca9373
 wheels = [
     { url = "https://files.pythonhosted.org/packages/80/03/6ea8b1b2a5ab40a7a60dc464d3daa7aa546e0a74d74a9f8ff551ea7905db/executing-2.0.1-py2.py3-none-any.whl", hash = "sha256:eac49ca94516ccc753f9fb5ce82603156e590b27525a8bc32cce8ae302eb61bc", size = 24922 },
 ]
+
+[[package]]
+name = "fire"
+version = "0.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+    { name = "termcolor" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1b/1b/84c63f592ecdfbb3d77d22a8d93c9b92791e4fa35677ad71a7d6449100f8/fire-0.6.0.tar.gz", hash = "sha256:54ec5b996ecdd3c0309c800324a0703d6da512241bc73b553db959d98de0aa66", size = 88439 }
 
 [[package]]
 name = "importlib-resources"
@@ -639,6 +651,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29519eb6884dd1415ecb53b0e934862d3559ddcb7e20b/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9", size = 44707 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695", size = 24521 },
+]
+
+[[package]]
+name = "termcolor"
+version = "2.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/56/d7d66a84f96d804155f6ff2873d065368b25a07222a6fd51c4f24ef6d764/termcolor-2.4.0.tar.gz", hash = "sha256:aab9e56047c8ac41ed798fa36d892a37aca6b3e9159f3e0c24bc64a9b3ac7b7a", size = 12664 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl", hash = "sha256:9297c0df9c99445c2412e832e882a7884038a25617c60cea2ad69488d4040d63", size = 7719 },
 ]
 
 [[package]]
